@@ -1,6 +1,6 @@
 const axios = require('axios');
 exports.homeRoutes = (req,res) => {
-    axios.get('http://localhost:3000/api/users')
+    axios.get('https://nyxwolf-intern-aravind.herokuapp.com/api/users')
     .then(function(response) {
         res.render('index',{users: response.data});
     })
