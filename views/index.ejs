@@ -1,0 +1,30 @@
+<%-include('include/_header')%>
+<!-- <link ref="stylesheet" href="../assets/css/style.css"> -->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <a href="/add-user" class=""border-shadow>
+                <span class="text-gradient">Add New Student <i class="fas fa-user"></i> </span>
+            </a>
+        </div>
+        <form action="/" method="POST">
+            <table class="table">
+                <thread class="thread-dark">
+                    <tr>
+                        <th>USN NO.</th>
+                        <th>Name</th>
+                        <th>Email id</th>
+                        <th>Gender</th>
+                        <th>Date of Birth</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thread>
+                <tbody>
+                    <%-include('include/_show')%>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</main>
+<%-include('include/_footer')%>
