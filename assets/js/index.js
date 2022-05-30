@@ -21,6 +21,8 @@ $("#update_user").submit(function(event){
 
     $.ajax(request).done(function(response) {
         alert("data updated successfully");
+        window.location.href = "https://nyxwolf-intern-aravind.herokuapp.com/";
+
     })
 })
 
@@ -36,7 +38,7 @@ if(window.location.pathname=="/"){
         if(confirm("Are you sure you want to delete ")){
             $.ajax(request).done(function(response) {
                 alert("data removed successfully");
-                location.reload();
+                window.location.href = "https://nyxwolf-intern-aravind.herokuapp.com/";
             })
         }
     })
