@@ -28,4 +28,4 @@ dotenv.config({path:'config.env'})
  app.use('/',require('./server/routes/router'))
 
 
-app.listen(3000,'0.0.0.0',()=>{console.log(`check Server on port ${PORT}`)});
+app.listen(PORT|| 3000,'0.0.0.0',()=>{console.log(`check Server on port ${PORT}`)});
